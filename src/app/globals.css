@@ -17,11 +17,85 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+/*btn style*/
+
+.btn {
+  size: 1rem;
+  background-color: #0079d9;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.3s;
+  margin: 5px;
+  height: 50px;
+}
+.btn-smal {
+  size: 0.75rem;
+}
+
+.btn-large {
+  size: 1.25rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.btn:hover {
+  background-color: #3da3f6;
+}
+.btn:active {
+  background-color: #024d8b;
+}
+
+.btn-success {
+  background-color: rgb(80, 221, 80);
+}
+.btn-success:hover {
+  background-color: rgb(112, 243, 112);
+}
+.btn-success:active {
+  background-color: rgb(3, 92, 3);
+}
+
+.btn-error {
+  background-color: rgb(230, 28, 28);
+}
+.btn-error:hover {
+  background-color: rgb(226, 123, 130);
+}
+.btn-error:active {
+  background-color: rgb(56, 1, 1);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-icon {
+  padding: 0;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+}
+/* ==button storey style==*/
+
+@media screen and (max-width: 450px) {
+  form {
+    width: 90% !important;
+  }
 }
